@@ -6,7 +6,8 @@ Array.prototype.validate = function(func){
 };
 
 const sumAll = function(start, end) {
-    if (!([start, end].validate(num => 0 <= num) && [start, end].validate(num => typeof(num) === "number"))){
+    if (!([start, end].validate(num => 0 <= num) && 
+    [start, end].validate(num => typeof(num) === "number"))){
         return "ERROR";
     }
     
